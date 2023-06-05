@@ -4,6 +4,9 @@ This repository is filled with academic and personal projects. I wanted to showc
 ## generative-transformer
 I implemented a generative pre-trained transformer using Pytorch. I followed a tutorial by [Andrej Karpathy](https://www.youtube.com/@AndrejKarpathy) to create the initial Bigram and GPT models that used characters as their tokens being trained using Little Shakespeare. I decided to go further and use OpenAI's Tiktoken to create a GPT model that used sub-word tokens, but that required me to take steps to make the model more memory effifienct, so I did some research and used a half model, checkpointing, and accumulated batching to reduce the strain on the GPU.
 
+## mnist-deep-learning
+For this project, I created a set of procedural neural networks using Jax to compile each function using jit. The pure-nature of the jit functionality made it such that I needed to think outside of the box to implement the neural network, but I eventually was able to do so and trained the model using mnist classification. The accuracy was all over the place, and I found that I would need to implement parallelization which I still need to do more research on since Jax's jit requires all inputs to be the same size going into vectorization or paralellization on a TPU or GPU.
+
 ## naive-sentiment-analysis
 This project was my first attempt at sentiment analysis, where I used a neural network class I implemented. The implementation was slow, and the training was near impossible on my home computer. This project taught me alot about the necessity of optimization in machine learning. Eventually, I would like to reattempt sentiment analysis.
 
