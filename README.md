@@ -1,6 +1,9 @@
 # Artificial Intelligence Project Collection
 This repository is filled with academic and personal projects. I wanted to showcase them, but they do not have enough substance to be within their own repositories. I might return to each project at some point to add to or retry them. Some of these projects have also inspired me to create a potentially larger project involving them all.
 
+## generative-transformer
+I implemented a generative pre-trained transformer using Pytorch. I followed a tutorial by [Andrej Karpathy](https://www.youtube.com/@AndrejKarpathy) to create the initial Bigram and GPT models that used characters as their tokens being trained using Little Shakespeare. I decided to go further and use OpenAI's Tiktoken to create a GPT model that used sub-word tokens, but that required me to take steps to make the model more memory effifienct, so I did some research and used a half model, checkpointing, and accumulated batching to reduce the strain on the GPU.
+
 ## naive-sentiment-analysis
 This project was my first attempt at sentiment analysis, where I used a neural network class I implemented. The implementation was slow, and the training was near impossible on my home computer. This project taught me alot about the necessity of optimization in machine learning. Eventually, I would like to reattempt sentiment analysis.
 
